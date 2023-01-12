@@ -1,0 +1,665 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Manuel Bartolome Sevilla</title>
+	<link rel="icon" href="icon.png">
+<style>
+			/* TIPOGRAFIA */
+
+			@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@200;300;400;500;600;700&display=swap');
+			/*ESENCIALES*/
+
+		*{
+			box-sizing: border-box;
+		}
+		
+		::selection {
+ 			 color: #ffffff;
+ 			 background: #f50537;
+		}
+	    html{
+		    scroll-behavior: smooth;
+	    }
+		
+
+/*BARRA DE NAVEGACION*/
+
+				.logo
+				{
+					justify-content: flex-start !important;
+					display: flex !important;
+		}
+
+
+			.barra 
+				{
+		  background-color: #ffffff;
+		  top: 0%;
+		  text-align: justify;
+		  display: flex;
+		  position: -webkit-sticky;
+		  position: sticky;
+		  top: 0;
+		  z-index: 1000;
+		}
+
+			.barra a
+				{
+		  color: #b7c2d0;
+		  font-family: 'kanit';
+		  font-size: 1.15rem;
+		  text-decoration: none;
+		  margin-right: 15px;
+		  margin-left: 15px;
+		  padding: 17px;
+		  color:black;
+		}
+			.barra a:hover{
+					color:#f50537;
+				}	
+
+
+				#mapa{
+					padding: 0 0 0 850px
+				}
+		
+/**** TIPOGRAFÍA *****/
+
+		a{
+			text-decoration: none
+		}
+		body{
+			font-family: 'kanit', sans-serif;
+			background: #ffffff;
+			margin:0 0;
+		}
+		p{
+			font-weight: 300
+		}
+	
+		h1{
+			text-align: center;
+		}
+		
+		
+		
+		
+	/***HEADER***/
+		header{
+		     position: static;
+		     background-image: url("header.jpg") !important;
+		     background: no-repeat top center;
+		     background-size: cover;
+		     padding:0 0 600px 0;
+		     background: red;
+	}
+
+	
+	
+	/**** BOTON DENTRO DE HEADER ****/
+		#boton1{
+			background: #ffffff;
+			text-decoration: none;
+			padding: 15px 30px;
+			align-items: center;
+			position: absolute;
+			top:25%;
+			left: 3%;
+			color:#f50537;
+		}
+		
+		#boton1:hover{
+			background: #999999;
+			color:#ffffff;
+		}
+		
+
+
+
+
+	/***INTERMEDIO***/
+
+		#uno p{
+			text-align: center;
+			margin: auto;
+			font-size: 1.2rem;
+	
+		}
+		
+		
+		#blanco p{
+		
+		text-align: center;
+			margin: auto;
+			padding: 25px
+		}
+		
+		
+		#uno h2{
+			text-align: center;
+			font-size: 2rem
+		}
+
+		#uno p{
+			text-align: center;
+			margin: auto;
+	
+		}
+		
+		
+		
+		
+		#uno h2{
+			text-align: center;
+		}
+		#uno{
+		  margin: auto;
+ 		  width: 60%;
+ 		  padding: 30px 30px 60px 30px;
+		  color: #f50537;
+		}
+
+  
+	/***LOCALIZACION Y FECHAS***/
+
+.mitad{
+			vertical-align: middle;
+			
+		}
+		
+		#gris{
+			background: #f50537 no-repeat;
+			background-image: url("fondo1.jpg");	
+			height: 800px;
+			margin-bottom: -5px;
+		}
+		
+		
+		#estacion{
+			
+		padding-top: 40px;
+		padding-left: 400px;
+		
+			
+		}
+
+		#float-d{
+			text-align: center;
+			float: left;
+			max-width: 35%;
+			color: #ffffff;
+			padding: 250px  0  0 250px ;
+			
+		}
+		#float-d p{
+		font-size: 1.2rem;
+		}
+		#float-d h2{
+		font-size: 2.4rem;
+		}
+
+	/***CONSIGUE TU PLAZA***/
+
+
+		#plaza{
+			background: url("fondo2.jpg") no-repeat;
+			height: 800px;
+			width: 100%;
+			margin-top: -66px;
+				}
+		
+		
+		
+			#float-i{
+			text-align:center;
+			float: right;
+			max-width: 50%;
+			color:#f50537;
+			padding: 0px  250px  0 250px;
+			font-size: 1.2rem;
+		}
+			#float-i h2{
+			font-size: 2.3rem
+			}
+			#float-i p{
+			font-size: 1.3rem
+			}
+			#rs3{
+			padding: 100px 0 0 130px
+		
+			
+		}
+
+	
+
+	/***MODELOS***/
+		#modelos{
+			color:#f50537;
+		}
+			
+		.wrapper {
+		  width: 100%;
+		  height: 300px;
+		  display: flex;
+		  align-items: center;
+		  justify-content: center;
+		}
+		.slider {
+		  width: 2000px;
+		  height: 200px;
+		  position: relative;
+		  background: white;
+		  display: flex;
+		  overflow: hidden;
+		}
+		.slide {
+		  height: 200px;
+		  display: flex;
+		  align-items: center;
+		  animation: slideshow 30s linear infinite;
+		}
+		.slide img {
+		  height: 140px;
+		  padding: 0 60px 0 60px;
+		}
+		@keyframes slideshow {
+		  0% {transform: translateX(0);}
+		  100% {transform: translateX(-100%);}
+		}
+		.slider::before, .slider::after {
+		  height: 200px;
+		  width: 400px;
+		  position: absolute;
+		  content: "";
+		  background: linear-gradient(to right, white 0%, rgba(255,255,255,0) 100%);
+		  z-index: 2;
+		}
+		.slider::before {
+		  left: 0;
+		  top: 0;
+		}
+		.slider::after {
+		  right:0;
+		  top:0;
+		  transform: rotateZ(180deg);
+		}
+					
+
+		/***PROGRAMA***/
+
+		#programa{
+			padding: 10px 0 0 0;
+			height: 750px;
+			padding-left: 25px;
+			color:white;
+			background:#f50537;
+		}
+		
+		
+		table#tabla {
+		border-collapse: collapse;
+		text-align: center;
+		font-size: 1.1rem;
+		
+		}
+	    #tabla th {
+		border-top: 3px solid white;
+		padding: 36px 60px;
+		padding-left: 0
+		}
+	    #tabla tr {
+		border-top: 2px solid white;
+		padding: 20px 100px;
+		}
+	
+		#contenedor{
+		position: absolute;
+		left:33%
+		}
+		
+		
+		/***INTERMEDIO***/
+		
+		
+		#limits p{
+			text-align: center;
+			margin: auto;
+	
+		}
+		
+		
+		
+		
+		#limits h2{
+			text-align: center;
+		}
+
+		#limits p{
+			text-align: right;
+			margin: auto;
+	
+		}
+		
+		
+		
+		
+		#limits h2{
+			text-align: right;
+		}
+		#limits{
+		  margin: 0;
+ 		  width: 100%;
+ 		  padding: 30px 30px 60px 0;
+		  color: #f50537;
+		  height:800px;
+		  background: url("inter.jpg") no-repeat top left;
+		  
+		  
+		}
+		
+        #text p{
+		  text-align: right;
+		  max-width: 55%;
+		  position: absolute;
+		  left:  40%;
+		  padding:  140px 0 0 0;
+		  font-size: 1.3rem;
+        }
+
+
+		#text h1{
+		  text-align: right;
+		  position: absolute;
+		  left:77%;
+		  font-size: 2.3rem;		  
+		}
+		/***MAPA***/
+		#mapa iframe{
+		  width: 95%;
+		  height: 60%;
+		  position: absolute;
+		  left: 50px;
+		  padding: 20px 0;
+	
+		}
+		
+		 #txtmapa{
+		   color: #f50537;
+			 
+		 }
+		 #ubicacion{
+		   height: 740px
+		 }
+	
+
+
+
+
+		/***FOOTER***/
+
+
+		footer{
+		background: black;
+		color:white;
+		height: 350px;
+		}
+
+		#redes{
+		position: absolute;
+		right:70px;
+		top:5485px;
+		}
+
+    	#copy{
+		font-size: 0.7rem;
+		padding: 30px 40px;
+		max-width: 60%
+    	}
+		#hr{
+		max-width: 80%;
+		
+		}
+		#condiciones{
+		position: absolute;
+		top: 5740px;
+		left: 2%;
+		}
+		
+		#enlaces a{
+		color: white;
+		}
+		
+        #enlaces a:hover{
+		text-decoration: underline;
+        }
+		#enlaces th{
+		padding: 40px 20px 80px 40px;
+		}
+	
+
+		
+
+
+
+		
+</style>
+	
+	
+</head>
+<body>
+	
+	
+		
+	<div class="barra">
+  <div class="logo">
+    <a href="#" ><img src="logo.png" ></a>
+  </div>
+  <a href="#gris2" >Localizacion y fechas</a>
+  <a href="#plaza2" >Consigue tu plaza</a>
+  <a href="#modelos2" >Modelos</a>
+  <a href="#programa" >Programa</a>
+  <a href="#ubicacion2">Ubicación</a>
+</div>
+	
+	
+	<header class="a">
+	<a id="boton1" href="https://www2.audidrivingexperience.es/inscripcion-cursos/"  target="_blank">Reserva tu plaza</a>
+	</header>
+	
+	
+	
+	<div id="uno">
+	<div id="unotxt">
+		<h2>Más emocionante que nunca</h2>
+		
+		<p>Vuelve la experiencia Winter y este año lo hace a lo grande y con más novedades que nunca. Porque hemos ampliado el circuito de Baqueira Beret para que mejores tu técnica al volante y practiques la anticipación, la agilidad y el tiempo de reacción en superficies deslizantes como nunca lo has hecho. Además, estrenamos el nuevo Audi Lodge, un exclusivo refugio de montaña. Y si lo deseas, complementa tu experiencia con una jornada de esquí con beneficios exclusivos en forfaits y equipamiento.</p>
+		</div>
+		<div id="gris2"></div>
+	</div>
+
+	
+<div id="gris">	
+	<div class="mitad">	
+  	<img id="estacion" class="bordes" src="estacion.webp" alt="">
+	
+	
+	<div id="float-d"><h2>Localización y fechas</h2>
+
+	
+	
+	 
+	    <p>Estación de esquí Baqueira Beret, Viella. Circuito Audi driving experience en Orri. Fechas: 28, 29 y 30 de diciembre de 2022 y todos los fines de semana desde el 14 de enero hasta el 26 de febrero de 2023*.</p>
+</div>	  
+</div>
+<div id="plaza2"></div>
+</div>
+	
+	
+	<br>
+	<br>
+	<br>
+	
+	
+	<div id="plaza">	
+	<div class="mitad">	
+  	<img id="rs3" class="bordes" src="rs3.jpg" alt="">
+	
+	<div id="float-i">
+	<h2>Consigue tu plaza</h2>
+
+	
+	
+	 
+	    <p>Esta apasionante experiencia es exclusiva para un número limitado de asistentes, por lo que te recomendamos reservar tu plaza lo antes posible. La experiencia es individual, por lo que recomendamos acudir sin acompañante. En el caso de que acudas acompañado, el acompañante no podrá realizar las pruebas y es necesario avisar a la organización.  En el caso que el acompañante quiera asistir al almuerzo en el Moet Winter Lounge, se deberá notificar a la organización para poder realizar la reserva y el coste del almuerzo deberá ser abonado directamente en el establecimiento.</p>
+</div>	  
+</div>
+	<div id="modelos2"></div>
+
+</div>
+	
+	
+	
+	<div id="modelos"><h1>Modelos</h1>
+	
+	<a href="https://www.audi.es/es/web/es/modelos.html?bycarlinegroup=r8,RS" target="_blank">
+	
+	  <div class="wrapper">
+          <div class="slider">
+            <div class="slide">
+              <img src="rs3s.png" />
+              <img src="rs4a.png" />
+              <img src="rs5s.png" />
+              <img src="rs6a.png" />
+              <img src="rsq3.png" />
+              <img src="rs3s.png" />
+              <img src="rs5s.png" />
+            </div>
+            <div class="slide">
+              <img src="rs3s.png" />
+              <img src="rs4a.png" />
+              <img src="rs5s.png" />
+              <img src="rs6a.png" />
+              <img src="rsq3.png" />
+              <img src="rs3s.png" />
+              <img src="rs5s.png" />
+            </div>
+          </div>
+      </div>
+	
+		</a>
+	</div>
+
+	
+	<div id="limits">
+	<div id="text">
+	<h1>Supera tus limites</h1>
+	
+	<p>¿Te imaginas derrapando en la nieve? Disfruta de la experiencia de conducir en hielo y nieve, desarrollando unas habilidades que mejorarán tus técnicas de conducción en situaciones extremas. Te enseñaremos cómo realizar la trazada perfecta, aprovechando las frenadas y ajustando las curvas al límite, gracias a la potencia, tracción y suspensiones Audi para sentir sin límites en terrenos tan impredecibles como la nieve.</p>
+		</div>
+		
+	</div>
+	
+	
+	<div id="programa">
+	<h1>Programa</h1>
+		<br>
+		<br>
+		<br>
+		<br>
+	<div id="contenedor">
+	<table id="tabla">
+		<tr>
+			
+			<th>08:00</th>
+			<th></th>
+			<th></th>
+			<td>Llegada, acreditación y desayuno en el Audi Lodge</td>
+		</tr>
+		<tr>
+			<th>08:30</th>
+			<th></th>
+			<th></th>
+			<td>Bienvenida y clase teórica</td>
+		</tr>
+		
+		<tr>
+			<th>09:00</th>
+			<th></th>
+			<th></th>
+			<td>Inicio de pruebas de conducción</td>
+		</tr>
+		
+		<tr>
+			<th>12:00</th>
+			<th></th>
+			<th></th>
+			
+			<td>Conclusiones y entrega de diplomas</td>
+		</tr>
+		<tr>
+			<th>12:30</th>
+			<th></th>
+			<th></th>
+			
+			<td>Comida en Möet Winter Lounge</td>
+		</tr>
+		
+		</table>
+		<div id="ubicacion2"></div>
+	</div>
+	</div>
+	
+	
+	
+	
+	<div id="ubicacion">
+	<h1 id="txtmapa">Encuentranos aqui</h1>
+	<div id="mapa">
+	<iframe  src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11723.922653938724!2d0.965292!3d42.7253!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xa2493150b427f8c4!2sAudi%20Quattro%20Bar!5e0!3m2!1ses!2ses!4v1670190579864!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+	</div>
+	</div>
+	
+
+	<footer>
+	
+
+			<div id="redes">
+			<a href="https://www.instagram.com/audispain/?hl=es" target="_blank">
+			<img src="insta.svg" width="30px"></a>
+			<br>
+			<br>
+			<a href="https://es-es.facebook.com/audispain/" target="_blank">
+				<img src="face.svg" width="30px"></a>
+			<br>
+			<br>
+			<a href="https://twitter.com/audispain" target="_blank">
+			<img src="twi.svg" width="30px"></a></div>
+		<div id="enlaces">
+			<table>
+			<tr>
+			<th><a href="https://www.audi.es/es/web/es/mundo-audi/audi-driving-experience/experiencia-winter-baqueira.html#layer=/es/web/es/tools/navigation/layer/condiciones-de-uso.html" target="_blank">Condiciones de uso</a></th>
+			
+			<th><a href="https://www.audi.es/es/web/es/mundo-audi/audi-driving-experience/experiencia-winter-baqueira.html#layer=/es/web/es/tools/navigation/layer/politica-de-privacidad.html" target="_blank">Politica de privacidad</a></th>
+		
+			<th><a href="https://www.audi.es/es/web/es/mundo-audi/audi-driving-experience/experiencia-winter-baqueira.html#layer=/es/web/es/tools/navigation/layer/legal/tratamiento-de-los-datos-obtenidos.html" target="_blank">Politica de cookies</a></th>
+		
+			<th><a href="https://www.audi.es/es/web/es/mundo-audi/audi-driving-experience/experiencia-winter-baqueira.html#layer=/es/web/es/tools/advice/faq.html">FAQs</a></th>
+			</tr></table></div>
+		
+			<hr id="hr">
+			
+			<div id="copy">
+			La información relativa al consumo de combustible y las emisiones ha sido determinada de conformidad con los procedimientos de medición contemplados por la normativa. Desde el 1 de septiembre de 2017, ciertos vehículos nuevos han sido homologados mediante el procedimiento armonizado de ensayo de vehículos ligeros a nivel mundial (WLTP), que es un nuevo procedimiento de ensayo más realista para medir el consumo de combustible y las emisiones de CO2. Desde el 1 de septiembre de 2018, el WLTP sustituyó al ciclo de conducción europeo NEDC. Dadas las condiciones de ensayo más realistas, el consumo de combustible y las emisiones de CO2 medidos con arreglo al WLTP suelen ser más elevados que los medidos con arreglo al NEDC. 	
+			</div>
+			
+			
+		
+			
+	</footer>
+	
+	
+	
+</body>
+	
+</html>
